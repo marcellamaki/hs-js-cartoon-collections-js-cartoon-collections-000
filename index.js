@@ -35,13 +35,12 @@ for(var i = 0; i < words.length; i ++)
   }
 
 
-  function findTheCheese (foods, cheese) {
-    var cheese = ["cheddar", "gouda", "camembert"];
-    for(var i = 0; i < cheese.length; i++){
-       if(foods.includes(cheese[i])){
-         return cheese[i];
-    }else{
-            return "no cheese!";
-  }
-}
+  function findTheCheese(foods) {
+ var cheese = ["cheddar", "gouda", "camembert"];
+ for (var i = 0; i < cheese.length; i++) {
+   if (foods.includes(cheese[i])) {
+     return cheese[i];
+   }
+ }
+ return "no cheese!";
 }
